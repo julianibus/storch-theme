@@ -681,7 +681,7 @@ Shortcode Content
 --------------------*/
 
 .hero-slide .carousel-caption {
-    bottom      : 20%;
+    bottom      : 30%;
     text-shadow : none;
     transform   : translateY(50%);
     background-color: #2d2d2dbb;
@@ -906,22 +906,10 @@ background-clip: padding-box;
 text-align: center;
 }
 
-.button {
-font-size: 1em;
-padding: 10px;
-color: #fff;
-border: 2px solid #06D85F;
-border-radius: 20px/50px;
-text-decoration: none;
-cursor: pointer;
-transition: all 0.3s ease-out;
-}
-.button:hover {
-background: #06D85F;
-}
 
 .overlay {
 position: fixed;
+z-index: 1000;
 top: 0;
 bottom: 0;
 left: 0;
@@ -937,20 +925,25 @@ opacity: 1;
 }
 
 .popup {
-margin: 70px auto;
+margin: 150px auto;
 padding: 20px;
-background: #fff;
+color: #ffffff;
+background-color: #2d2d2dff;
 border-radius: 5px;
-width: 30%;
+width: 50%;
+height:70%;
 position: relative;
-transition: all 5s ease-in-out;
+transition: all 0.5s ease-in-out;
 }
 
 .popup h2 {
-margin-top: 0;
-color: #333;
-font-family: Tahoma, Arial, sans-serif;
+color: #ffffff;
 }
+
+.popup h1 {
+    color: #ffffff;
+}
+
 .popup .close {
 position: absolute;
 top: 20px;
@@ -965,7 +958,7 @@ color: #333;
 color: #06D85F;
 }
 .popup .content {
-max-height: 30%;
+max-height: 90%;
 overflow: auto;
 }
 
@@ -974,7 +967,7 @@ overflow: auto;
     width: 70%;
 }
 .popup{
-    width: 70%;
+    width: 90%;
 }
 }
       
