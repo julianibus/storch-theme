@@ -48,11 +48,11 @@ jQuery(function ($) {
     // tooltip
     // -------------------------------------------------------------
 
-    (function () {
+    /*(function () {
 
         $('[data-toggle="tooltip"]').tooltip()
 
-    }());
+    }());*/
 
 
 

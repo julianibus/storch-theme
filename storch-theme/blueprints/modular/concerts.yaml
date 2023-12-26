@@ -1,0 +1,52 @@
+title: Concerts
+'@extends':
+    type: default
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                concerts:
+                    type: tab
+                    title: Konzerte
+                    fields:
+                        header.slides:
+                            name: slides
+                            type: list
+                            style: vertical
+                            label: Konzerte
+                            fields:
+                                .heading:
+                                    type: text
+                                    label: Titel
+                                    help: Titel
+                                .description:
+                                    type: textarea
+                                    rows: 5
+                                    label: Beschreibung
+                                    help: Beschreibung
+                                .background_image:
+                                    type: filepicker
+                                    preview_images: true
+                                    acccept:
+                                        - .png
+                                        - .jpg
+                                        - .gif
+                                    label: Bild
+                                    help: Bild
+                                .dateandtime:
+                                    type: datetime
+                                    label: Konzertbeginn
+                                    help: Konzertbeginn
+                                .location:
+                                    type: textarea
+                                    rows: 1
+                                    label: Konzertlocation
+                                    help: Konzertlocation - Kurztitel
+                                .address:
+                                    type: textarea
+                                    rows: 5
+                                    label: Adresse Konzertlocation
+                                    help: Konzertlocation - Adresse

@@ -707,18 +707,18 @@ Shortcode Content
         margin-top : 60px;
         }
 
-    .hero-slide .carousel-caption h1 {
+    /*.hero-slide .carousel-caption h1 {
         font-size : 30px;
-        }
+        }*/
 
     .hero-slide .carousel-indicators {
         bottom : 20px;
         }
 
-    .hero-slide .carousel-caption p {
+    /*.hero-slide .carousel-caption p {
         line-height: 1.2;
         font-size : 14px;
-        }
+        }*/
     }
 
 /* -------------------
@@ -809,6 +809,48 @@ Shortcode Content
 .x-services .thumbnail .caption p {
     margin : 0;
     }
+
+
+
+.concert-box {
+    width: 100%;
+    padding: 10px 20px 15px 0px;
+    margin: 0px;
+    display: grid;
+    background-color: #152e4d;
+    color: #ffffff;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 150px 1fr;
+    gap: 0px;
+    
+}
+
+.concert-box-month p {
+    text-align: center;
+}
+
+.concert-box-location p {
+    vertical-align: bottom;
+}
+
+.concert-box-day p {
+    vertical-align: middle;
+    font-size: 90px;
+    text-align: center;
+    line-height: 1;
+    color: #ffffff;
+    
+}
+
+.concert-box-heading p {
+    vertical-align: middle;
+    font-size: 45px;
+    text-align: left;
+    line-height: 1.2;
+    color: #ffffff;
+    
+}
+      
 
 /* --------------------------------------------------
 features start

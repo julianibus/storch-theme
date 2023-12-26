@@ -1,0 +1,27 @@
+<section class="about-text ptb-100">
+    <section class="section-title">
+        <div class="container text-center">
+            <h2>{{ page.title|raw }}</h2>
+            <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
+        </div>
+    </section>
+
+    <div class="container">
+    {% for concert in page.header.concerts %}
+        {% if loop.index  == 0 %}
+        <br>
+        {% endif %}
+        <section class="concert-box">
+            <div class="concert-box-month"><p> {{ concert.dateandtime|date("F") }} </p></div>
+            <div class="concert-box-location"> <p><b>{{ concert.location|raw }}  {{ concert.dateandtime|date("H:i") }}</b></p></div>
+            <div class="concert-box-day"><p> {{ concert.dateandtime|date("j") }} </p></div>
+            <div class="concert-box-heading"><p> {{ concert.heading|raw }} </p></div>
+        </section> 
+        <br>
+        {% if loop.index == page.header.concerts.count %}
+        <br>
+        {% endif %}
+    {% endfor %}
+    </div>
+
+</section>
