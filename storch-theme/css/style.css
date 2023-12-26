@@ -24,7 +24,7 @@ h1 {
 
 h2 {
     font-size   : 24px;
-    line-height : 24px;
+    line-height : 35px;
     }
 
 h3 {
@@ -48,11 +48,43 @@ h6 {
     line-height : 24px;
     }
 
+.row {
+    margin: 20px;
+    
+}
+
+.one-column-layout article {
+        -webkit-column-count: 1;
+            -moz-column-count: 1;
+                column-count: 1;
+        -webkit-column-width: 300px;
+            -moz-column-width: 300px;
+                column-width: 300px;
+        }
+
+.two-column-layout article {
+    -webkit-column-count: 2;
+        -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-width: 300px;
+        -moz-column-width: 300px;
+            column-width: 300px;
+    }
+
+.three-column-layout article {
+    -webkit-column-count: 3;
+        -moz-column-count: 3;
+            column-count: 3;
+    -webkit-column-width: 300px;
+        -moz-column-width: 300px;
+            column-width: 300px;
+    }
+
 /* --------------------------------------
 LINK STYLE
 ------------------------------------------*/
 a {
-    color              : #31aae2;
+    color              : #c10a1e;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -112,8 +144,8 @@ ul {
 
 /*btn-primary*/
 .btn-primary {
-    background-color : #31aae2;
-    border-color     : #31aae2;
+    background-color : #c10a1e;
+    border-color     : #c10a1e;
     }
 
 .btn-primary.active,
@@ -139,7 +171,7 @@ ul {
 .btn-default:focus,
 .btn-default:hover,
 .open > .dropdown-toggle.btn-default {
-    color            : #31aae2;
+    color            : #c10a1e;
     background-color : #ffffff;
     border-color     : #ffffff;
     }
@@ -224,7 +256,7 @@ text-highlights
     }
 
 .text-highlights.blue {
-    background : #31aae2;
+    background : #c10a1e;
     }
 
 /*Common Page Header*/
@@ -279,13 +311,13 @@ BACK TO TOP
     position    : fixed;
     bottom      : 30px;
     right       : 30px;
-    color       : #31aae2;
+    color       : #c10a1e;
     cursor      : pointer;
     display     : none;
     z-index     : 1;
     width       : 30px;
     height      : 30px;
-    border      : 2px solid #31aae2;
+    border      : 2px solid #c10a1e;
     text-align  : center;
     font-size   : 18px;
     line-height : 24px;
@@ -293,7 +325,7 @@ BACK TO TOP
 
 #toTop:hover {
     color              : #ffffff;
-    background-color   : #31aae2;
+    background-color   : #c10a1e;
     border             : 1px solid transparent;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -338,7 +370,7 @@ Shortcode Content
         }
 
     .sticky-nav.navbar-default {
-    	background-color: #c10a1e;
+    	background-color: #2d2d2d;
     	padding: 19px 0;
         }
 
@@ -496,7 +528,7 @@ Shortcode Content
     }
 
 .dropdown-menu li a:hover {
-    color            : #31aae2;
+    color            : #c10a1e;
     background-color : #f5f5f5;
     padding-left     : 25px;
     }
@@ -504,7 +536,7 @@ Shortcode Content
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:focus,
 .dropdown-menu > .active > a:hover {
-    color            : #31aae2;
+    color            : #c10a1e;
     background-color : #f5f5f5;
     padding-left     : 25px;
     }
@@ -649,10 +681,11 @@ Shortcode Content
 --------------------*/
 
 .hero-slide .carousel-caption {
-    bottom      : 50%;
+    bottom      : 20%;
     text-shadow : none;
     transform   : translateY(50%);
     background-color: #2d2d2dbb;
+    border:3px solid white;
     }
 
 .hero-slide .carousel-caption h1 {
@@ -803,7 +836,7 @@ Shortcode Content
     }
 
 .x-services .thumbnail .caption h3 a:hover {
-    color : #31aae2;
+    color : #c10a1e;
     }
 
 .x-services .thumbnail .caption p {
@@ -814,19 +847,27 @@ Shortcode Content
 
 .concert-box {
     width: 100%;
-    padding: 10px 20px 15px 0px;
+    padding: 10px 10px 0px 10px;
     margin: 0px;
     display: grid;
     background-color: #152e4d;
     color: #ffffff;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 20px 1fr;
     grid-template-columns: 150px 1fr;
-    gap: 0px;
+    gap: 20px;
+    -webkit-transition: background-color 1s; /* For Safari 3.0 to 6.0 */
+    transition: background-color 1s; /* For modern browsers */
+    
+}
+
+.concert-box:hover {
+    background-color: #1e4474;
     
 }
 
 .concert-box-month p {
     text-align: center;
+    border:3px solid white;
 }
 
 .concert-box-location p {
@@ -839,6 +880,7 @@ Shortcode Content
     text-align: center;
     line-height: 1;
     color: #ffffff;
+    border:3px solid white;
     
 }
 
@@ -849,6 +891,91 @@ Shortcode Content
     line-height: 1.2;
     color: #ffffff;
     
+}
+
+
+  
+.box {
+width: 40%;
+margin: 0 auto;
+background: rgba(255,255,255,0.2);
+padding: 35px;
+border: 2px solid #fff;
+border-radius: 20px/50px;
+background-clip: padding-box;
+text-align: center;
+}
+
+.button {
+font-size: 1em;
+padding: 10px;
+color: #fff;
+border: 2px solid #06D85F;
+border-radius: 20px/50px;
+text-decoration: none;
+cursor: pointer;
+transition: all 0.3s ease-out;
+}
+.button:hover {
+background: #06D85F;
+}
+
+.overlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.7);
+transition: opacity 500ms;
+visibility: hidden;
+opacity: 0;
+}
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+.popup {
+margin: 70px auto;
+padding: 20px;
+background: #fff;
+border-radius: 5px;
+width: 30%;
+position: relative;
+transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+margin-top: 0;
+color: #333;
+font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+position: absolute;
+top: 20px;
+right: 30px;
+transition: all 200ms;
+font-size: 30px;
+font-weight: bold;
+text-decoration: none;
+color: #333;
+}
+.popup .close:hover {
+color: #06D85F;
+}
+.popup .content {
+max-height: 30%;
+overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+.box{
+    width: 70%;
+}
+.popup{
+    width: 70%;
+}
 }
       
 
@@ -1110,7 +1237,7 @@ Team
     left:0;
     right: 0;
     bottom: 0;
-    background: #c10a1e;
+    background: #2d2d2d;
     }
 
 .single-page-title h2 {
@@ -1238,9 +1365,10 @@ Team
     }
 
 .x-progress .progress-bar {
-    background-color: #31aae2;
+    background-color: #c10a1e;
     box-shadow: none;
     }
+
 
 
 
@@ -1269,7 +1397,7 @@ service-icon-style
     transition: all 0.3s ease 0s;
     }
 .service-icon-style .promo-block-wrapper:hover .promo-icon {
-    background-color: #31aae2;
+    background-color: #c10a1e;
     color: #fff;
     border: 2px solid transparent;
     }
@@ -1315,7 +1443,7 @@ service-icon-style
     display: block;
     padding: 12px 30px;
     background: #fff;
-    color: #31aae2;
+    color: #c10a1e;
     }
 .x-accordion .panel .panel-heading a.collapsed {
     color: #969595;
@@ -1373,7 +1501,7 @@ service-icon-style
 .tabWhy .nav-tabs.nav-justified>.active>a:hover {
     border: 0;
     background-color: transparent;
-    color: #31aae2;
+    color: #c10a1e;
     }
 
 /*media query*/
@@ -1447,7 +1575,7 @@ service-icon-style
     box-shadow: none;
     }
 .form-control:focus {
-    border: 2px solid #31aae2 !important;
+    border: 2px solid #c10a1e !important;
     box-shadow: none;
     }
 
@@ -1568,7 +1696,7 @@ service-icon-style
 
 .footer .footer-widget .btn:hover {
     color            : #ffffff;
-    background-color : #31aae2;
+    background-color : #c10a1e;
     border           : 1px solid transparent;
     }
 
@@ -1594,7 +1722,7 @@ service-icon-style
 
 .footer .footer-widget .social-links li a:hover {
     color            : #ffffff;
-    background-color : #31aae2;
+    background-color : #c10a1e;
     }
 
 .footer .copyright-section {
