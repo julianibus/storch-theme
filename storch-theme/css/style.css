@@ -681,16 +681,18 @@ Shortcode Content
 --------------------*/
 
 .hero-slide .carousel-caption {
-    bottom      : 30%;
+    bottom      : 50%;
     text-shadow : none;
+    visibility: hidden;
     transform   : translateY(50%);
-    background-color: #2d2d2dbb;
-    border:3px solid white;
+    background-color: #2d2d2ddd;
+    /*border:3px solid white;*/
     }
 
 .hero-slide .carousel-caption h1 {
     font-size      : 60px;
     line-height    : 1;
+    visibility: hidden;
     font-weight    : bold;
     text-transform : uppercase;
     color          : #ffffff;
@@ -699,6 +701,7 @@ Shortcode Content
 
 .hero-slide .carousel-caption p {
     font-size   : 20px;
+    visibility: hidden;
     color       : #ffffff;
     font-weight : normal;
     line-height: 1.5;
@@ -850,8 +853,9 @@ Shortcode Content
     padding: 10px 10px 0px 10px;
     margin: 0px;
     display: grid;
-    background-color: #152e4d;
-    color: #ffffff;
+    border:3px solid black;
+    background-color: #ffffff;
+    color: black;
     grid-template-rows: 20px 1fr;
     grid-template-columns: 150px 1fr;
     gap: 20px;
@@ -861,13 +865,17 @@ Shortcode Content
 }
 
 .concert-box:hover {
-    background-color: #1e4474;
+    border:3px solid #c10a1e;
     
 }
 
 .concert-box-month p {
     text-align: center;
-    border:3px solid white;
+    border:3px solid black;
+}
+
+.concert-box:hover ~ .concert-box-month p {
+    border:3px solid #c10a1e;
 }
 
 .concert-box-location p {
@@ -879,9 +887,13 @@ Shortcode Content
     font-size: 90px;
     text-align: center;
     line-height: 1;
-    color: #ffffff;
-    border:3px solid white;
+    color: black;
+    border:3px solid black;
     
+}
+
+.concert-box:hover ~ .concert-box-day p {
+    border:3px solid #c10a1e;
 }
 
 .concert-box-heading p {
@@ -889,7 +901,7 @@ Shortcode Content
     font-size: 45px;
     text-align: left;
     line-height: 1.2;
-    color: #ffffff;
+    color: black;
     
 }
 
@@ -952,10 +964,10 @@ transition: all 200ms;
 font-size: 30px;
 font-weight: bold;
 text-decoration: none;
-color: #333;
+color: #fff;
 }
 .popup .close:hover {
-color: #06D85F;
+color: #aaa;
 }
 .popup .content {
 max-height: 90%;

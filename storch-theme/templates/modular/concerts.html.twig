@@ -1,7 +1,13 @@
+
+    <div class="container">
+        {{ page.content|raw }}
+    </div>
+
+
 <section class="about-text ptb-100">
     <section class="section-title">
         <div class="container text-center">
-            <h2>{{ page.title|raw }}</h2>
+            <h2 id="concerts">{{ page.title|raw }}</h2>
             <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
         </div>
     </section>
@@ -11,7 +17,7 @@
         {% if loop.index  == 0 %}
         <br>
         {% endif %}
-
+        
         <a class="button" href="#concert-popup-{{loop.index}}">
         <section class="concert-box">
             <div class="concert-box-month"><p> {{ concert.dateandtime|date("F") }} </p></div>
@@ -24,7 +30,7 @@
         <div id="concert-popup-{{loop.index}}" class="overlay">
             <div class="popup">
                 <h1><b>{{ concert.heading|raw }}</b></h1>
-                <a class="close" href="#">&times;</a>
+                <a class="close" href="#concerts">&times;</a>
                 <div class="content">
                     {{ concert.dateandtime|date("d.m.Y H:i") }} - {{ concert.location|raw }} <br>
                     <br>
