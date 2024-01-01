@@ -17,11 +17,11 @@
                 <div class="promo-block-wrapper clearfix">
                     <div class="promo-icon">
                         {% if feature.icon != '' %}
-                        <i class="fa {{ feature.icon }}"></i>
+                        <a href="{{ feature.link }}"><i class="fa {{ feature.icon }}"></i></a>
                         {% endif %}
                     </div>
                     <div class="promo-content">
-                        <h3>{{ feature.title|raw }}</h3>
+                        <h3><a href="{{ feature.link }}">{{ feature.title|raw }}</a></h3>
 
                         <p>{{ feature.description|raw }}</p>
                     </div>

@@ -17,16 +17,18 @@
         <div class="row">
         {% endif %}
         <div class="col-sm-6 col-md-{{ (12 / column_count)|round }}">
+            <a href="{{solution.link}}">
             <div class="promo-block-wrapper clearfix">
                 <div class="promo-icon">
                     <i class="fa {{ solution.icon }}"></i>
                 </div>
                 <div class="promo-content">
-                    <h3>{{ solution.title|raw }}</h3>
+                    <h3><a href="{{solution.link}}">{{ solution.title|raw }}</a></h3>
 
                     <p>{{ solution.description|raw }}</p>
                 </div>
             </div>
+            </a>
         </div>
         {% if loop.index == page.header.solutions|length or loop.index % column_count == 0 %}
         </div>
