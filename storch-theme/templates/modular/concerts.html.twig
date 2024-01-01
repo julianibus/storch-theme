@@ -21,7 +21,7 @@
         <a class="button" href="#concert-popup-{{loop.index}}">
         <section class="concert-box">
             <div class="concert-box-month"><p> {{ concert.dateandtime|date("F") }} </p></div>
-            <div class="concert-box-location"> <p><b>{{ concert.location|raw }}  {{ concert.dateandtime|date("H:i") }}</b></p></div>
+            <div class="concert-box-location-short"> <p><b>{{ concert.locationshort|raw }}  {{ concert.dateandtime|date("H:i") }}</b></p></div>
             <div class="concert-box-day"><p> {{ concert.dateandtime|date("j") }} </p></div>
             <div class="concert-box-heading"><p> {{ concert.heading|raw }} </p></div>
         </section> 
@@ -47,7 +47,7 @@
 
                     <div class="mapouter">
                         <div class="gmap_canvas">
-                            <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q={{concert.address}}&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q={{ concert.addressquery|raw }}&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                             </iframe>
                         </div>
                     </div>

@@ -370,7 +370,7 @@ Shortcode Content
         }
 
     .sticky-nav.navbar-default {
-    	background-color: #2d2d2d;
+    	background-color: #c10a1e;
     	padding: 19px 0;
         }
 
@@ -850,10 +850,10 @@ Shortcode Content
 
 .concert-box {
     width: 100%;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
     margin: 0px;
     display: grid;
-    border:3px solid black;
+    border:3px solid rgb(255, 255, 255);
     background-color: #ffffff;
     color: black;
     grid-template-rows: 20px 1fr;
@@ -880,6 +880,7 @@ Shortcode Content
 
 .concert-box-location p {
     vertical-align: bottom;
+    width: max-content;
 }
 
 .concert-box-day p {
@@ -898,7 +899,7 @@ Shortcode Content
 
 .concert-box-heading p {
     vertical-align: middle;
-    font-size: 45px;
+    font-size: 40px;
     text-align: left;
     line-height: 1.2;
     color: black;
@@ -1737,7 +1738,6 @@ service-icon-style
     }
 
 .footer .copyright-section .copytext {
-    text-transform : uppercase;
     color          : #6b6b6b;
     font-weight    : 600;
     }

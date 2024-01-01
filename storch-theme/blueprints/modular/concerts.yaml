@@ -45,8 +45,18 @@ form:
                                     rows: 1
                                     label: Konzertlocation
                                     help: Konzertlocation - Kurztitel
+                                .locationshort:
+                                    type: textarea
+                                    rows: 1
+                                    label: Konzertlocation (kurz)
+                                    help: Konzertlocation - Sehr-Kurztitel
                                 .address:
                                     type: textarea
                                     rows: 5
                                     label: Adresse Konzertlocation
                                     help: Konzertlocation - Adresse
+                                .address-query:
+                                    type: textarea
+                                    rows: 5
+                                    label: Adresse Konzertlocation - Map Query String
+                                    help: Konzertlocation - Map Query String
