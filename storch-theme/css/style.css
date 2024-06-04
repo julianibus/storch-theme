@@ -353,7 +353,7 @@ Shortcode Content
         }
 
     .navbar-default {
-        background    : #333333 !important;
+        background    : #c10a1e !important;
         padding       : 10px 0;
         border-bottom : none;
         }
@@ -361,7 +361,7 @@ Shortcode Content
 
 @media (min-width : 768px) {
     .navbar-default {
-        background-color   : #2d2d2d;
+        background-color   : #c10a1e;
         padding            : 30px 0;
         border-color       : transparent;
         -webkit-transition : all .5s ease-in-out;
@@ -1108,6 +1108,7 @@ Team
 
 #testimonialSlider .carousel-inner .item img {
     display       : inline-block;
+    text-align: center;
     width         : 60px;
     height        : 60px;
     border-radius : 3px;
@@ -1243,7 +1244,7 @@ Team
     left:0;
     right: 0;
     bottom: 0;
-    background: #2d2d2d;
+    background: #c10a1e;
     }
 
 .single-page-title h2 {
