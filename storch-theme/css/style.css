@@ -864,6 +864,11 @@ Shortcode Content
     
 }
 
+.concert-box-month {
+    height: 100px;
+
+}
+
 .concert-box:hover {
     border:3px solid #c10a1e;
     
@@ -897,7 +902,7 @@ Shortcode Content
     border:3px solid #c10a1e;
 }
 
-.concert-box-heading p {
+.concert-box-heading p.pheading {
     vertical-align: middle;
     font-size: 40px;
     text-align: left;
@@ -905,6 +910,72 @@ Shortcode Content
     color: black;
     
 }
+
+.concert-box-heading p.pnote {
+    vertical-align: middle;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.2;
+    top: 100px;
+    color: #c10a1e;
+    display: inline;
+    
+}
+
+
+.blinking {
+    -webkit-animation: 1s blink ease infinite;
+    -moz-animation: 1s blink ease infinite;
+    -ms-animation: 1s blink ease infinite;
+    -o-animation: 1s blink ease infinite;
+    animation: 1s blink ease infinite;
+    
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
 
 
   

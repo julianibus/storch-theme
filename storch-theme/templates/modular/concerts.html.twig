@@ -9,7 +9,6 @@
         <div class="container text-center">
             <h2 id="concerts">{{ page.title|raw }}</h2>
             <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
-            <br> Für mehr Infos auf Termin klicken.
         </div>
     </section>
 
@@ -24,7 +23,10 @@
             <div class="concert-box-month"><p> {{ concert.dateandtime|date("F") }} </p></div>
             <div class="concert-box-location-short"> <p><b>{{ concert.locationshort|raw }}  {{ concert.dateandtime|date("H:i") }}</b></p></div>
             <div class="concert-box-day"><p> {{ concert.dateandtime|date("j") }} </p></div>
-            <div class="concert-box-heading"><p> {{ concert.heading|raw }} </p></div>
+            <div class="concert-box-heading"><p class="pheading"> {{ concert.heading|raw }} </p> <br>
+                <p class="pnote" style="visibility: {{ concert.note_visibility|raw }}"><span style="white-space: nowrap;"><svg height="15" width="15" class="blinking">
+                <circle cx="7.5" cy="7.5" r="7.5" fill="#c10a1e" />x</svg></span> {{ concert.note|raw }}</p>
+            </div>
         </section> 
         </a>
 
